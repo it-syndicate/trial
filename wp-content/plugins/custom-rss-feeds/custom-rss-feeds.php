@@ -1,11 +1,15 @@
 <?php
 /**
  * Plugin Name: Custom RSS Feeds
- * Description: Creates a custom RSS feed based on selected category names.
- * Version: 1.2.3
+ * Description: Creates a custom RSS feed based on selected category names and options for feed output.
+ * Version: 1.3.0
  * Author: SiteCare
  * Author URI: https://sitecare.com
  */
+
+// Include feed options configuration and tweaks
+require_once plugin_dir_path( __FILE__ ) . 'custom-rss-feed-options.php';
+require_once plugin_dir_path( __FILE__ ) . 'custom-rss-feed-tweaks.php';
 
 /**
   * Custom RSS2 Feed Template for the 'alt' feed.
